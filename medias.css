@@ -1,0 +1,26 @@
+/* MEDIA  */
+@media (max-width: 768px) {
+
+  /* HERO _____________*/
+  #hero {
+    min-height: auto;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* PROBLEMA _____________*/
+  .before-after {
+    grid-template-columns: 1fr;
+  }
+
+  /* SERVICES  */
+  .services__cards-container{
+    grid-template-columns: 1fr;
+  }
+}

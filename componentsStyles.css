@@ -1,0 +1,419 @@
+/* BTN-PRIMARY/SECONDARY__________________ */
+.btn-primary,
+.btn-secondary {
+  /*border: 1px solid #e5e5e5;
+  padding: 0 10px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  border-radius: 10px;*/
+
+  padding: 0.75rem 1.25rem;
+  /*border-radius: 6px;*/
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  /*font-size: var(--text-base)*/
+
+  /*&:hover{
+    cursor: pointer;
+  }*/
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #111;
+  color: #fff;
+}
+
+.btn-secondary {
+  border: 1px solid #ddd;
+  color: #111;
+}
+
+.btn-secondary-dark {
+  border: 1px solid #ddd;
+  color: #ddd;
+}
+
+/* BADGES_______________________________ */
+.badge {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.25rem 0.5rem;
+  border-radius: 10px;
+  /*DEFAULT*/
+  background: #eef;
+
+  /*CUSTOM*/
+  /*background: #fff;*/
+  border: 1px solid #e5e5e5;
+}
+.badge-green {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 10px;
+  /*DEFAULT*/
+  /*suave*/
+  /*background: #5cb85c;*/
+  /*mas ocuro*/
+  /*background: #53a853;*/
+  /*mas mas oscuro*/
+  background: #4a934a;
+  color: #fff;
+
+  /*CUSTOM*/
+  /*background: #fff;*/
+  border: 1px solid #e5e5e5;
+}
+.badge-red {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 10px;
+  /*DEFAULT*/
+  /*suave*/
+  background: #dc3545;
+  color: #fff;
+
+  /*CUSTOM*/
+  /*background: #fff;*/
+  border: 1px solid #e5e5e5;
+}
+
+/* MINI-CIRCLE ___________________________ */
+.circle-red {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  border-radius: 100%;
+  background: red;
+  margin-right: 5px;
+  outline: 1px solid black;
+}
+
+/*7 CONTAINERS ___________________*/
+.glass-container {
+  /* Base blanca gris Apple */
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 247, 0.78) 0%,
+    rgba(240, 230, 235, 0.76) 22%,
+    rgba(235, 225, 230, 0.74) 45%,
+    rgba(230, 235, 242, 0.76) 68%,
+    rgba(248, 248, 250, 0.92) 100%
+  );
+
+  /* Blur realista (Apple usa MUCHO blur) */
+  backdrop-filter: blur(60px) saturate(120%);
+  -webkit-backdrop-filter: blur(60px) saturate(120%);
+
+  /* Geometría */
+  border-radius: 20px;
+
+  /* Borde casi invisible */
+  border: 0.5px solid rgba(255, 255, 255, 0.45);
+
+  /* Sombra Apple auténtica (muy difusa) */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 0px 60px rgba(0, 0, 0, 0.28);
+  /*0 30px 60px rgba(0, 0, 0, 0.18);*/
+
+  /*VARIANTE TRAIDA DEL NAV*/
+  /*box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);*/
+}
+
+/* VARIANTE MAS TRANSPARENTE */
+.glass-container2 {
+  backdrop-filter: blur(30px);
+  background-image: linear-gradient(#fff, rgba(255, 255, 255, 0.4));
+
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+
+  border-radius: 20px;
+}
+
+.glass-container-header {
+  /*DEFAULT*/
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+
+  /* TEST APPLE */
+  /* Base blanca gris Apple */
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 247, 0.78) 0%,
+    rgba(240, 230, 235, 0.76) 22%,
+    rgba(235, 225, 230, 0.74) 45%,
+    rgba(230, 235, 242, 0.76) 68%,
+    rgba(248, 248, 250, 0.92) 100%
+  );
+
+  /* Blur realista (Apple usa MUCHO blur) */
+  backdrop-filter: blur(60px) saturate(120%);
+  -webkit-backdrop-filter: blur(60px) saturate(120%);
+
+  /* Geometría */
+  /*border-radius: 20px;*/
+
+  /* Borde casi invisible */
+  border: 0.5px solid rgba(255, 255, 255, 0.45);
+
+  /* Sombra Apple auténtica (muy difusa) */
+  /*box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 30px 60px rgba(0, 0, 0, 0.18);*/
+}
+
+.glass-container-header2 {
+  backdrop-filter: blur(30px);
+  background-image: linear-gradient(#fff, rgba(255, 255, 255, 0.4));
+  /*DEFAULT*/
+  box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.75);
+}
+
+.sub-glass {
+  /* Base blanca gris Apple */
+  background: linear-gradient(
+    180deg,
+    rgba(242, 242, 247, 0.78) 0%,
+    rgba(240, 230, 235, 0.76) 22%,
+    rgba(235, 225, 230, 0.74) 45%,
+    rgba(230, 235, 242, 0.76) 68%,
+    rgba(248, 248, 250, 0.92) 100%
+  );
+
+  /* Blur realista (Apple usa MUCHO blur) */
+  backdrop-filter: blur(60px) saturate(120%);
+  -webkit-backdrop-filter: blur(60px) saturate(120%);
+
+  /* Geometría */
+  border-radius: 20px;
+
+  /* Borde casi invisible */
+  border: 0.5px solid rgba(255, 255, 255, 0.45);
+
+  /* Sombra Apple auténtica (muy difusa) */
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(0, 0, 0, 0.18);
+  /*0 30px 60px rgba(0, 0, 0, 0.18);*/
+
+  /*color: #1c1c1e;*/
+  /*color: #111;*/
+}
+
+.sub-glass-red {
+  /*STYLE 1 - BACKGROUND*/
+  background: #dc3545;
+  color: #fff;
+
+  /*STYLE 2 - BORDER*/
+  /*border: 1px solid #dc3545;*/
+
+  /* Blur realista (Apple usa MUCHO blur) */
+  backdrop-filter: blur(60px) saturate(120%);
+  -webkit-backdrop-filter: blur(60px) saturate(120%);
+
+  /* Geometría */
+  border-radius: 20px;
+
+  /* Borde casi invisible */
+  border: 0.5px solid rgba(255, 255, 255, 0.45);
+
+  /* Sombra Apple auténtica (muy difusa) */
+  box-shadow:
+    inset 0 0 0 #dc3545,
+    0 0 10px #dc3545;
+  /*0 30px 60px rgba(0, 0, 0, 0.18);*/
+}
+
+.sub-glass-green {
+  /*STYLE 1 - BACKGROUND*/
+  background: #4a934a;
+  color: #fff;
+
+  /*STYLE 2 - BORDER*/
+  /*border: 1px solid #4a934a;*/
+
+  /* Blur realista (Apple usa MUCHO blur) */
+  backdrop-filter: blur(60px) saturate(120%);
+  -webkit-backdrop-filter: blur(60px) saturate(120%);
+
+  /* Geometría */
+  border-radius: 20px;
+
+  /* Borde casi invisible */
+  border: 0.5px solid rgba(255, 255, 255, 0.45);
+
+  /* Sombra Apple auténtica (muy difusa) */
+  box-shadow:
+    inset 0 0 0 #4a934a,
+    0 0 10px #4a934a;
+  /*0 30px 60px rgba(0, 0, 0, 0.18);*/
+}
+
+/* GLASS ______________________________*/
+
+/* 1__________ */
+/*.glass {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+  padding: 1.5rem;
+  color: #000;
+}
+
+.glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: inherit;
+  backdrop-filter: blur(4px);
+  box-shadow:
+    inset -10px -8px 0 rgba(255, 255, 255, 1),
+    inset 0 -9px 0 rgba(255, 255, 255, 1);
+  opacity: 0.6;
+}*/
+
+/* 2 MISMO EFECTO QUE EL #3 Y EL #5 (SE VE QUE ES 
+EL MEJOR - PERO IGUAL COMPARAR CON EL #3 Y #5) 
+__________ */
+/* .glass-container {
+  background: rgba(255, 255, 255, 0.35);
+
+  backdrop-filter: blur(24px) saturate(180%);
+  -webkit-backdrop-filter: blur(24px) saturate(180%);
+
+  border-radius: 20px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+  color: #111;
+} */
+
+/* .glass-container:hover {
+  backdrop-filter: blur(36px) saturate(220%);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+} */
+
+/*3 SUAVE CON SOMBRA (MUY LIMPIA) (DA LA SENACION DE MAS ELEVACION 
+EN LA CARD QUE EL *5  __________ */
+/* .glass-container {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(30px) saturate(200%);
+  border-radius: 22px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.18);
+}
+
+.glass-container:hover {
+  backdrop-filter: blur(36px) saturate(220%);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+} */
+
+/*4 GRIS POR DENTRO DEL CONTENEDOR ___________________*/
+
+/* .glass-container {
+  position: relative;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2), 
+              inset 0 4px 20px rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  color: white;
+}
+
+.glass-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  backdrop-filter: blur(1px);
+  box-shadow: inset -10px -8px 0px -11px rgba(255, 255, 255, 1),
+              inset 0px -9px 0px -8px rgba(255, 255, 255, 1);
+  opacity: 0.6;
+  z-index: -1;
+  filter: blur(1px) drop-shadow(10px 4px 6px black) brightness(115%);
+} */
+
+/*5 SUAVE CON SOMBRA (MUY LIMPIA) ___________________*/
+/* .glass-container {
+  padding: 15px 30px;
+  background: rgba(255, 255, 255, 0.72);
+
+  backdrop-filter: blur(40px) saturate(180%);
+  -webkit-backdrop-filter: blur(40px) saturate(180%);
+
+  border-radius: 20px;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.6);
+
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.5) inset,
+    0 20px 40px rgba(0, 0, 0, 0.12);
+
+  color: #1c1c1e;
+} */
+
+/*6 GLASS ROSA ______________________________*/
+/* .glass-container {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 225, 230, 0.55) 0%,
+      rgba(255, 235, 240, 0.55) 25%,
+      rgba(240, 245, 255, 0.55) 65%,
+      rgba(255, 255, 255, 0.85) 100%
+    );
+
+  backdrop-filter: blur(45px) saturate(180%);
+  -webkit-backdrop-filter: blur(45px) saturate(180%);
+
+  border-radius: 22px;
+
+  border: 0.5px solid rgba(255, 255, 255, 0.55);
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.6),
+    0 25px 50px rgba(0, 0, 0, 0.15);
+
+  color: #1c1c1e;
+} */

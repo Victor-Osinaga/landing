@@ -1,0 +1,601 @@
+/** {
+  margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}*/
+
+#particles-bg {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  /* background: radial-gradient(
+    ellipse at center,
+    #a1a1a1 0%,
+    #757575 70%,
+    #474747 100%
+  ); */
+  /* background: radial-gradient(
+    ellipse at center,
+    #ffffff 0%,
+    #d6d9e2 70%,
+    #d4d9fd 100%
+  ); */
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-height: 60px;
+  --text-xs: 0.75rem; /* 12px */
+  --text-sm: 0.875rem; /* 14px */
+  --text-base: 1rem; /* 16px */
+  --text-lg: 1.125rem; /* 18px */
+  --text-xl: 1.25rem; /* 20px */
+  --text-4xl: 2.25rem; /* 36px */
+
+  /*FONT WEIGHT*/
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  /*text color header - LIGHT/DARK*/
+  --text-header-light: #000000;
+  --text-header-dark: #ffffff;
+
+  /*text color body - LIGHT/DARK*/
+  --text-body-light: lab(15.204% 0 -0.00000596046);
+  --text-body-dark: lab(84.92% 0 -0.0000119209);
+
+  /*text color sidebar - LIGHT/DARK*/
+  --text-sidebar-light: lab(2.75381% 0 0);
+  --text-sidebar-dark: lab(98.26% 0 0);
+
+  /*text colors variant*/
+  --text-secondary: #555555; /*oklch(.45 0 0)*/
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+/*
+sizing: 12.8px 14px 15px
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: white;
+
+  /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krIG-0uhDU5iqbv2Xslwf-ZxQ4BYyy-_Yg&s");*/
+  /*background-image: url("https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");*/
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-position: center;
+  background-size: cover;
+
+  font-family: "Montserrat", sans-serif;
+  font-family: "Geist", sans-serif;
+  /*font-size: 15px;*/
+  font-weight: var(--font-weight-normal);
+  color: var(--text-body-light);
+}
+.hero {
+  min-height: 100vh;
+  width: 100%;
+
+  background-image: url("./bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*DEFAULT COMPONENT STYLES*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: clamp(1rem, 4vw, 2rem);
+  /*border: 1px solid green;*/
+}
+
+/*section + section {
+  margin-top: clamp(2rem, 4vw, 4rem);
+}*/
+
+section {
+  /*padding-block: clamp(3rem, 5vw, 4rem);*/
+  padding-block: 2rem;
+}
+.card__default-spacing {
+  padding: 1rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+  /*border: 1px solid #e5e5e5;*/
+  /*border-radius: 10px;*/
+  /*background: #fff;*/
+}
+
+/*HEADER ______________________________________*/
+
+#header {
+  height: var(--nav-height);
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Texto */
+  /*color: #1c1c1e;*/
+  /*color: #111;*/
+  color: var(--text-header-light);
+  font-weight: var(--font-weight-medium);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1200px;
+  /*border: 1px solid red;*/
+}
+
+.header__title {
+  font-size: var(--text-lg);
+}
+
+.header__links-container {
+  display: flex;
+  gap: 30px;
+}
+
+.header__links {
+  display: flex;
+  gap: 15px;
+}
+.header__links a {
+  /*text-shadow: none;*/
+  /*transition: text-shadow .2s, color 1s;*/
+
+  position: relative;
+  font-size: var(--text-sm);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/*.header__links a:hover {
+    color: black;
+}*/
+
+.header__links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  /*background: #ce5937;*/
+  background: var(--text-header-light);
+  transition: width 0.3s ease;
+}
+
+.header__links a:hover::after {
+  width: 100%;
+}
+
+/* ________________________________________*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* HERO ______________________________________*/
+
+#hero {
+  min-height: calc(70svh - var(--nav-height));
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  /*border: 1px solid red;*/
+  gap: 2rem;
+
+  /* margin-top: var(--nav-height); */
+  padding-top: calc(var(--nav-height) + 2rem);
+}
+
+/* GRID */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+}
+
+.hero__content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /*align-items: center;*/
+  gap: 1rem;
+}
+
+/* TEXT */
+.hero-title {
+  /*font-size: clamp(2rem, 4vw, 3rem);*/
+  font-size: var(--text-4xl);
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: var(--text-xl);
+  font-weight: var(--font-weight-semibold);
+}
+
+.hero-description {
+  max-width: 520px;
+  /*margin-bottom: 1rem;*/
+}
+
+/* CTA */
+
+.cta-container {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* SAAS CARDS */
+.hero-products {
+  display: grid;
+  gap: 1rem;
+}
+
+.saas-card h3 {
+  font-size: var(--text-xl);
+}
+
+.saas-card p {
+  font-size: var(--text-base);
+}
+
+/* STATS */
+/*.hero-stats {
+  border-top: 10px solid #ddd;
+  border-bottom: 10px solid #ddd;
+}*/
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stat {
+  padding-inline: 0.75rem;
+
+  /*border-right: 1px solid #ddd;*/
+}
+
+.stat:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.stat strong {
+  font-size: var(--text-lg);
+  display: block;
+}
+
+.stat span {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+/*PROBLEM __________________________________*/
+
+.problem-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.before-after {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  /*margin: 1.5rem 0;*/
+}
+.before-after__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.25rem;
+  padding: 1rem 1.5rem;
+}
+
+.before-after__card strong {
+  font-size: var(--text-xl);
+}
+
+.problem__cta-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+/* SERVICES _____________________________ */
+
+#services h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.services__cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.services__cards-title {
+  font-size: var(--text-lg);
+}
+
+.services__card p {
+  font-size: var(--text-base);
+}
+
+/*FOOTER___________________________________*/
+#footer {
+  background: #000000;
+  position: relative;
+  padding-top: 180px;
+  padding-bottom: 40px;
+  margin-top: 180px;
+  font-size: var(--text-sm);
+  color: var(--text-body-dark);
+}
+.subfooter__container {
+  /*background: white;*/
+  /*position: relative;
+  top: -50px;*/
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  margin: 0 auto;
+  width: 90%;
+  max-width: 800px;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 40% 60%;
+  padding: 1.5rem 2.5rem;
+  /*border-radius: 20px;*/
+  /*outline: 1px solid black;*/
+  color: var(--text-body-light);
+}
+.subfooter__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.subfooter__text h5 {
+  /*font-size: var(--text-xl);*/
+  font-size: 1.75rem;
+}
+
+.tagCloud {
+  display: flex;
+  font-size: 10px;
+  position: relative;
+  z-index: -1;
+  font-weight: 600;
+  align-items: center;
+  justify-content: center;
+}
+
+/**/
+.footer__container {
+  /*display: grid;*/
+  /*grid-template-columns: 1fr 2fr;*/
+  /*gap: 15px;*/
+  display: flex;
+  justify-content: space-between;
+
+  position: relative;
+  z-index: 1;
+}
+
+.footer__empresa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.footer__empresa-description {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer__empresa-sublinks {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+.footer__empresa-sublinks h4 {
+  display: block;
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-secondary);
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: flex-end;
+  column-gap: 2rem;
+  line-height: 1.5;
+}
+
+.footer__links h4 {
+  font-size: var(--text-base);
+  font-weight: var(--font-weight-semibold);
+}
+
+.rights-reserved {
+  text-align: center;
+  /*font-weight: var(--font-weight-semibold);*/
+  font-size: var(--text-sm);
+}
+
+/*🧩 Ejemplo completo de Hero (copy real)
+
+Desarrollamos software web y productos SaaS
+Creamos soluciones digitales a medida y plataformas listas para usar
+para empresas que quieren crecer con tecnología.
+
+[Solicitar desarrollo] [Ver nuestros SaaS]
+
+✔ SaaS en producción · ✔ Desarrollo a medida · ✔ Escalables
+
+___________________
+
+🎨 Diseño recomendado (para que se vea profesional)
+
+Izquierda: texto + CTAs
+
+Derecha:
+
+mockup de un SaaS
+
+o ilustración de dashboards
+
+o cards flotantes con “SaaS / Dev / Cloud”
+
+_____________________________
+
+Microcopy de confianza (debajo del CTA)
+
+Esto es CLAVE para transmitir “uso real”:
+
+✔ Productos SaaS en producción
+
+✔ Usuarios activos reales
+
+✔ Desarrollo probado, no teórico
+
+✔ Experiencia como builders y operadores
+
+Ejemplo:
+
+🚀 Productos propios · Usuarios reales · Software en producción
+
+__________________________________
+
+IDEAL: 
+
+Desarrollamos software que se usa en el mundo real
+Creamos soluciones a medida y desarrollamos nuestros propios productos SaaS,
+utilizados por empresas y usuarios reales.
+
+[Hablemos de tu proyecto] [Ver nuestros productos]
+
+✔ Productos propios · ✔ Usuarios reales · ✔ Software en producción
+VER SI AQUI ABAJO PODRIA IR: “+2.000 usuarios” - “99.9% uptime” - “En producción desde 2023”
+
+_____________________________________
+
+VARIANTES DEFINITIVAS
+
+Versión optimizada (recomendada)
+
+Mantiene tu idea, pero mejora fluidez y autoridad:
+
+1_ Creamos soluciones a medida y contamos con productos SaaS propios,
+utilizados por empresas y usuarios reales.
+
+O si querés conservar “respaldados”
+
+(pero de forma más elegante):
+
+2_ Creamos soluciones a medida, respaldadas por productos SaaS propios
+utilizados por empresas y usuarios reales.
+
+3_ Desarrollamos soluciones a medida y nuestros 
+productos SaaS propios demuestran que sabemos hacerlo, 
+usados por empresas y personas reales.
+
+4_ Creamos soluciones a medida. Nuestros productos SaaS 
+propios lo confirman, 
+usados por empresas y personas reales.
+
+
+EJEMPLO (CASI GANADOR):
+
+Headline (mensaje principal): “Creamos soluciones a medida”
+
+Subheadline (confianza): “(Y) Nuestros productos SaaS (desarrollados) lo 
+confirman, usados por empresas y personas reales.”
+
+CTA:
+
+Primario: “Solicitar presupuesto”
+
+Secundario: “Ver nuestros productos”
+
+*/

@@ -63,12 +63,13 @@
   padding: 0.25rem 1rem;
   border-radius: 10px;
   /*DEFAULT*/
-  /*suave*/
-  /*background: #5cb85c;*/
-  /*mas ocuro*/
-  /*background: #53a853;*/
-  /*mas mas oscuro*/
-  background: #4a934a;
+  background: var(--emerald);
+
+  /* otra variante */
+  /*  var: --emerald */
+  /* background: rgba(16, 185, 129, 0.1); */
+  /* color: var(--emerald); */
+
   color: #fff;
 
   /*CUSTOM*/

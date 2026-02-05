@@ -37,6 +37,9 @@
     <!-- MEDIAS -->
     <link rel="stylesheet" href="./medias.css" />
 
+    <!-- SCROLL REVEAL -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!-- <title>Desarrollo de software y SaaS a medida | Mendy Software</title> -->
     <title>Desarrollo de software a medida para empresas y startups</title>
   </head>
@@ -95,8 +98,8 @@
             <!-- 👇 AGRUPADOR SEMÁNTICO -->
             <h2 class="visually-hidden">Productos SaaS en producción</h2>
             <article class="card__default-spacing saas-card sub-glass">
-              <h3 class="">Plataforma Educativa</h3>
-              <p class="text-secondary">
+              <h3 class="saas-card-title">Plataforma Educativa</h3>
+              <p class="text-secondary saas-card-description">
                 SaaS para academias con seguimiento de alumnos y contenido
                 digital.
               </p>
@@ -104,8 +107,8 @@
             </article>
 
             <article class="card__default-spacing saas-card sub-glass">
-              <h3>Gestión de Clubes</h3>
-              <p class="text-secondary">
+              <h3 class="saas-card-title">Gestión de Clubes</h3>
+              <p class="text-secondary saas-card-description">
                 Sistema para socios, pagos, fichas y control administrativo.
               </p>
               <span class="badge-green">En producción ✓</span>
@@ -117,20 +120,20 @@
         <div class="container glass-container">
           <div class="stats-grid">
             <div class="stat">
-              <strong>+2.000</strong>
-              <span>Usuarios activos</span>
+              <strong class="stat-title">+2.000</strong>
+              <span class="stat-description">Usuarios activos</span>
             </div>
             <div class="stat">
-              <strong>99.9%</strong>
-              <span>Uptime promedio</span>
+              <strong class="stat-title">99.9%</strong>
+              <span class="stat-description">Uptime promedio</span>
             </div>
             <div class="stat">
-              <strong>Desde 2023</strong>
-              <span>Software en producción</span>
+              <strong class="stat-title">Desde 2023</strong>
+              <span class="stat-description">Software en producción</span>
             </div>
             <div class="stat">
-              <strong>Usuarios reales</strong>
-              <span>Empresas y personas</span>
+              <strong class="stat-title">Usuarios reales</strong>
+              <span class="stat-description">Empresas y personas</span>
             </div>
           </div>
         </div>
@@ -138,7 +141,7 @@
 
       <section id="problem">
         <div class="container problem-container glass-container">
-          <h2>Problemas que resolvemos con software a medida</h2>
+          <h2 class="section-title">Problemas que resolvemos con software a medida</h2>
 
           <p>
             Muchas empresas, startups, pymes y emprendedores siguen trabajando
@@ -376,5 +379,7 @@
     <script type="text/javascript" src="./sphere-config.js"></script>
 
     <script src="./particles.js"></script>
+    <script src="./scroll-reveal.js"></script>
+
   </body>
 </html>

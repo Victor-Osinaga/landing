@@ -10,21 +10,27 @@
   width: 100vw;
   height: 100vh;
   z-index: -1;
-  /* background: radial-gradient(
+   /*background: radial-gradient(
     ellipse at center,
     #a1a1a1 0%,
     #757575 70%,
     #474747 100%
   ); */
-  /* background: radial-gradient(
+   background: radial-gradient(
     ellipse at center,
     #ffffff 0%,
     #d6d9e2 70%,
     #d4d9fd 100%
-  ); */
+  ); 
 
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url("./bg.png");
+  /*Con imagen de fondo*/
+  /*background-image:
+    linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("./bg.png");*/
+
+  /*Sin imagen de fondo*/
+  /*background-image:
+  linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9));*/
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -144,6 +150,7 @@ section {
   flex-direction: column;
   gap: 0.5rem;
   align-items: flex-start;
+  text-align: start;
   /*border: 1px solid #e5e5e5;*/
   /*border-radius: 10px;*/
   /*background: #fff;*/
@@ -153,7 +160,7 @@ section {
 
 #header {
   height: var(--nav-height);
-  z-index: 2;
+  z-index: 100;
   position: fixed;
   top: 0;
   left: 0;
@@ -294,11 +301,11 @@ section {
   gap: 1rem;
 }
 
-.saas-card h3 {
+.saas-card .saas-card-title {
   font-size: var(--text-xl);
 }
 
-.saas-card p {
+.saas-card .saas-card-description {
   font-size: var(--text-base);
 }
 
@@ -311,7 +318,7 @@ section {
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   text-align: center;
 }
@@ -326,12 +333,12 @@ section {
   border-right: 1px solid #ccc;
 }
 
-.stat strong {
+.stat .stat-title {
   font-size: var(--text-lg);
   display: block;
 }
 
-.stat span {
+.stat .stat-description {
   font-size: var(--text-sm);
   color: var(--text-secondary);
 }
@@ -343,7 +350,16 @@ section {
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+  /*justify-content: center;
+  align-items: center;*/
+  /*line-height: 1.5;*/
 }
+
+.problem-list{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+  }
 
 .before-after {
   display: grid;
@@ -356,7 +372,9 @@ section {
   flex-direction: column;
   justify-content: start;
   gap: 0.25rem;
-  padding: 1rem 1.5rem;
+  /*padding: 1rem 1.5rem;*/
+  padding: .5rem .5rem 1rem;
+
 }
 
 .before-after__card strong {
@@ -478,18 +496,18 @@ section {
   flex-direction: column;
 }
 .footer__empresa-sublinks h4 {
-  display: block;
   font-size: var(--text-base);
   font-weight: var(--font-weight-semibold);
-  color: var(--text-secondary);
+  /*color: var(--text-secondary);*/
 }
 
 .footer__links {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-content: flex-end;
-  column-gap: 2rem;
-  line-height: 1.5;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  line-height: 1.7;
 }
 
 .footer__links h4 {

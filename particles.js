@@ -10,14 +10,21 @@ window.addEventListener("resize", resize);
 resize();
 
 const particles = [];
-const COUNT = 400;
+const COUNT = 200;
 
 // velocidades bien marcadas
 const SPEED_LAYERS = [
-  { speed: 0.4, radius: 1.5, glow: 0, alpha: 0.18 }, // lento
-  { speed: 0.88, radius: 1, glow: 0, alpha: 0.35 }, // medio
+  // MAS LENTO
+  // { speed: 0.4, radius: 1.5, glow: 0, alpha: 0.18 }, // lento
+  // { speed: 0.88, radius: 1, glow: 0, alpha: 0.35 }, // medio
+  // //   { speed: 0.6, radius: 2.6, glow: 22, alpha: 0.65 }, // rapido
+  // { speed: 1.4, radius: 1.4, glow: 0, alpha: 0.8 },
+
+  // MAS RAPIDO
+  { speed: 0.8, radius: 1.5, glow: 0, alpha: 0.18 }, // lento
+  { speed: 1.6, radius: 1, glow: 0, alpha: 0.35 }, // medio
   //   { speed: 0.6, radius: 2.6, glow: 22, alpha: 0.65 }, // rapido
-  { speed: 1.4, radius: 1.4, glow: 0, alpha: 0.8 },
+  { speed: 2.8, radius: 1.4, glow: 0, alpha: 0.8 },
 ];
 
 class Particle {
@@ -54,14 +61,14 @@ class Particle {
     // ctx.fillStyle = `rgba(255, 195, 95, ${this.alpha})`;
     // ctx.shadowColor = "rgba(255, 180, 80, 1)";
     // oro
-    ctx.fillStyle = `rgba(255, 215, 0, ${this.alpha})`;
-    ctx.shadowColor = "rgba(255, 215, 0, 1)";
+    // ctx.fillStyle = `rgba(255, 215, 0, ${this.alpha})`;
+    // ctx.shadowColor = "rgba(255, 215, 0, 1)";
     // blancco
     // ctx.fillStyle = `rgba(255, 255, 255, ${this.alpha})`;
     // ctx.shadowColor = "rgb(255, 255, 255)";
     // negro
-    // ctx.fillStyle = `rgba(0, 0, 0, ${this.alpha})`;
-    // ctx.shadowColor = "rgb(0, 0, 0)";
+    ctx.fillStyle = `rgba(0, 0, 0, ${this.alpha})`;
+    ctx.shadowColor = "rgb(0, 0, 0)";
 
     ctx.shadowBlur = this.glow;
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
@@ -83,6 +90,10 @@ function animate() {
 }
 
 animate();
+
+// DOTA2___________________________________________________________
+
+// ___________________________________________________________
 
 // const canvas = document.getElementById("particles-bg");
 // const ctx = canvas.getContext("2d");

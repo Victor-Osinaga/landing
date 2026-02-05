@@ -24,6 +24,11 @@
 
   .hero-grid {
     grid-template-columns: 1fr;
+    row-gap: 1rem;
+  }
+
+  .badge-available{
+    margin-bottom: 0;
   }
   .hero-title{
     font-size: 1.7rem;

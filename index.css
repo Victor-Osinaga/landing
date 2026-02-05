@@ -82,6 +82,52 @@
 
   /* bg colors */
   --emerald: rgba(16, 185, 129, 1);
+  --red: rgba(220, 53, 69, 1.0);
+
+  /*PULSE COLORS AND ALPHA*/
+  .pulse-green-point-available {
+    --pulse-r: 16;
+    --pulse-g: 185;
+    --pulse-b: 129;
+    --pulse-a: 0.7;
+    --pulse-scale: 1.15;
+    --animation-duration: 1.8s;
+  }
+  .pulse-red-point-available {
+    --pulse-r: 220;
+    --pulse-g: 53;
+    --pulse-b: 69;
+    --pulse-a: 0.7;
+    --pulse-scale: 1.15;
+    --animation-duration: 1.8s;
+  }
+
+  .pulse-green {
+    --pulse-r: 16;
+    --pulse-g: 185;
+    --pulse-b: 129;
+    --pulse-a: 0.7;
+    --pulse-scale: 1;
+    --animation-duration: 2s;
+  }
+
+  .pulse-red {
+    --pulse-r: 220;
+    --pulse-g: 53;
+    --pulse-b: 69;
+    --pulse-a: 0.7;
+    --pulse-scale: 1;
+    --animation-duration: 2s;
+  }
+
+  .pulse-blue {
+    --pulse-r: 59;
+    --pulse-g: 130;
+    --pulse-b: 246;
+    --pulse-a: 0.7;
+    --pulse-scale: 1;
+    --animation-duration: 2s;
+  }
 }
 
 .text-secondary {
@@ -190,7 +236,15 @@ section {
 }
 
 .header__title {
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
+  display: flex;
+  font-weight: 700;
+  gap: 8px;
+  align-items: center;
+}
+.header__title svg {
+  width: 2rem;
+  height: 2rem;
 }
 
 .header__links-container {
@@ -257,7 +311,7 @@ section {
   gap: 2rem;
 
   /* margin-top: var(--nav-height); */
-  padding-top: calc(var(--nav-height) + 2rem);
+  padding-top: calc(var(--nav-height));
 }
 
 /* GRID */
@@ -285,38 +339,10 @@ section {
   border-radius: 9999px;
 }
 
-.point-available {
-  width: 8px;
-  height: 8px;
-  background-color: var(--emerald);
-  border-radius: 50%;
-  margin-right: 0.5rem;
-  box-shadow: 0 0 5px var(--emerald);
-  flex-shrink: 0;
-
-  animation: pulse-dot 1.8s ease-out infinite;
-}
 
 .available-text {
   font-size: var(--text-sm);
   font-weight: var(--font-weight-semibold);
-}
-
-@keyframes pulse-dot {
-  0% {
-    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7);
-    transform: scale(1);
-  }
-
-  70% {
-    box-shadow: 0 0 0 8px rgba(76, 175, 80, 0);
-    transform: scale(1.15);
-  }
-
-  100% {
-    box-shadow: 0 0 0 0 rgba(76, 175, 80, 0);
-    transform: scale(1);
-  }
 }
 
 .hero__content-container {

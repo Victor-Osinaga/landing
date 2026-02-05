@@ -75,7 +75,9 @@
   /*CUSTOM*/
   /*background: #fff;*/
   border: 1px solid #e5e5e5;
+  animation: pulse-badge-green 1.8s ease-out infinite;
 }
+
 .badge-red {
   display: inline-block;
   font-size: var(--text-sm);
@@ -224,11 +226,11 @@
 
 .sub-glass-red {
   /*STYLE 1 - BACKGROUND*/
-  background: #dc3545;
+  background: var(--red);
   color: #fff;
 
   /*STYLE 2 - BORDER*/
-  /*border: 1px solid #dc3545;*/
+  /*border: 1px solid var(--red);*/
 
   /* Blur realista (Apple usa MUCHO blur) */
   backdrop-filter: blur(60px) saturate(120%);
@@ -242,14 +244,15 @@
 
   /* Sombra Apple auténtica (muy difusa) */
   box-shadow:
-    inset 0 0 0 #dc3545,
-    0 0 10px #dc3545;
+    inset 0 0 0 var(--red),
+    0 0 10px var(--red);
   /*0 30px 60px rgba(0, 0, 0, 0.18);*/
 }
 
 .sub-glass-green {
   /*STYLE 1 - BACKGROUND*/
-  background: #4a934a;
+  /*background: #4a934a;*/
+  background: var(--emerald);
   color: #fff;
 
   /*STYLE 2 - BORDER*/
@@ -267,10 +270,88 @@
 
   /* Sombra Apple auténtica (muy difusa) */
   box-shadow:
-    inset 0 0 0 #4a934a,
-    0 0 10px #4a934a;
+    inset 0 0 0 var(--emerald),
+    0 0 10px var(--emerald);
   /*0 30px 60px rgba(0, 0, 0, 0.18);*/
+  /*animation: pulse-green 2s ease-out infinite;*/
 }
+
+/*PUNTO PULSANTE*/
+.point-available {
+  width: 8px;
+  height: 8px;
+  background-color: var(--emerald);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+  box-shadow: 0 0 5px var(--emerald);
+  flex-shrink: 0;
+
+  animation: pulse-dot 1.8s ease-out infinite;
+}
+
+/* ANIMATIONS */
+@keyframes pulse-dot {
+  /* COLOR EMERALD */
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    transform: scale(1);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+    transform: scale(1.15);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  --pulse-r: 16;   /* verde por defecto */
+  --pulse-g: 185;
+  --pulse-b: 129;
+  --pulse-a: 0.7;
+  --pulse-scale: 1;
+  /*--pulse-border-radius: 20px;*/
+  --animation-duration: 2s;
+
+  animation: pulse var(--animation-duration) infinite ease-in-out;
+  transform: scale(1);
+  /*border-radius: var(--pulse-border-radius); */
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--pulse-r), var(--pulse-g), var(--pulse-b), var(--pulse-a));
+    transform: scale(1);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(var(--pulse-r), var(--pulse-g), var(--pulse-b), 0);
+    transform: scale(var(--pulse-scale));
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--pulse-r), var(--pulse-g), var(--pulse-b), 0);
+    transform: scale(1);
+  }
+}
+/*@keyframes pulse-green {
+  /* COLOR EMERALD */
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+    transform: scale(1);
+  }
+
+  70% {
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+    transform: scale(1.01);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+    transform: scale(1);
+  }
+}*/
 
 /* GLASS ______________________________*/
 

@@ -441,10 +441,39 @@ section {
 }
 
 .problem-list {
-  display: flex;
+  /*display: flex;*/
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1.5rem;
+  align-items: flex-start;
+  text-align: start;
+  align-content: start;
 }
+
+.card-problem {
+  /*text-align: start;*/
+}
+
+.card-problem-icon{
+  /*border: 1px solid black;*/
+  width: min-content;
+  display: flex;
+  padding: .75rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+  background: #ffffff;
+}
+
+.card-problem-title {
+  margin-bottom: .5rem;
+  font-size: var(--text-xl);
+}
+.card-problem-description{
+  color: var(--text-secondary);
+}
+
+/*.card-problem-content */
 
 .before-after {
   display: grid;

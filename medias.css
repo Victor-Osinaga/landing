@@ -72,8 +72,9 @@
 
   /* PROBLEMA _____________*/
   .problem-list{
-    flex-direction: column;
-    align-items: flex-start;
+    /*flex-direction: column;*/
+    /*align-items: flex-start;*/
+    grid-template-columns: 1fr;
   }
   .before-after {
     grid-template-columns: 1fr;
@@ -94,3 +95,205 @@
     row-gap: 2rem;
   }
 }
+
+
+/*
+Cómo abarcar los 3 tipos de landings (forma ideal)
+
+La idea es un solo servicio: “Landing pages”, pero dividido en 3 soluciones claras.
+El cliente se reconoce solo.
+
+📄 Servicio: Landing Pages
+
+Landing pages diseñadas según el objetivo de tu negocio.
+Una landing puede ser tu presencia online, una herramienta para captar clientes o el primer paso de un producto digital.
+
+1️⃣ Landing institucional (presencia online)
+
+Para quién es
+
+Negocios, marcas personales, estudios, profesionales
+
+Quieren verse serios y confiables
+
+Incluye
+
+Diseño visual profesional
+
+Contenido claro y ordenado
+
+Información de servicios
+
+Formulario o contacto directo
+
+Mensaje clave
+
+“Tu negocio, bien presentado en internet.”
+
+🔚 Acá la landing es el producto final. Punto.
+
+2️⃣ Landing de conversión (captación de clientes)
+
+Para quién es
+
+Servicios
+
+Campañas
+
+Anuncios
+
+Venta directa
+
+Incluye
+
+Copy orientado a conversión
+
+Formularios optimizados
+
+Integración con WhatsApp / email / CRM
+
+Métricas básicas
+
+Mensaje clave
+
+“Convertimos visitas en contactos reales.”
+
+🔚 Puede quedarse solo en landing, sin app.
+
+3️⃣ Landing para productos digitales / validación
+
+Para quién es
+
+Startups
+
+Emprendedores
+
+Nuevas ideas
+
+Incluye
+
+Propuesta de valor clara
+
+Captura de usuarios interesados
+
+Métricas de validación
+
+Base lista para escalar
+
+Mensaje clave
+
+“Validá tu idea antes de invertir en desarrollo.”
+
+➡️ Opcional: escalar a app web cuando el negocio lo necesita.
+
+🧠 Frase que ordena todo (usala tal cual)
+
+“Una landing puede ser el objetivo final o el primer paso, dependiendo de tu proyecto.”
+
+Eso educa sin vender de más.
+
+📐 Cómo mostrarlo visualmente (UX tip)
+
+Tres cards, una fila:
+
+🏢 Presencia online
+
+📈 Captación de clientes
+
+🚀 Lanzamiento de productos
+
+Una sola CTA:
+
+Hablemos de tu proyecto
+
+No pongas “Elegí plan”, dejá que hablen con vos.
+
+🔥 Copy listo para pegar (versión corta)
+
+Landing pages para cada etapa de tu negocio
+Diseñamos landing pages profesionales, enfocadas en imagen, conversión o validación de productos digitales.
+
+Cuando el proyecto crece, el software puede crecer con él.
+______________________________________
+
+Presencia online simple
+
+“Solo quiero estar en internet”
+
+Qué buscan:
+
+Imagen profesional
+
+Info clara
+
+Contacto
+
+Credibilidad
+
+Cómo lo vendés:
+
+“Creamos landing pages profesionales para que tu negocio tenga presencia online clara y confiable.”
+
+🚫 Acá NO hablás de app, MVP ni escala.
+
+2️⃣ Captación de leads / ventas
+
+“Quiero conseguir clientes”
+
+Qué buscan:
+
+Formularios
+
+WhatsApp
+
+Métricas
+
+Conversión
+
+Cómo lo vendés:
+
+“Landing pages optimizadas para convertir visitas en contactos.”
+
+Acá ya aparece la estrategia, pero sigue siendo solo landing.
+
+3️⃣ Validación y crecimiento
+
+“Quiero lanzar o escalar un producto”
+
+Qué buscan:
+
+Validar idea
+
+Medir tracción
+
+Escalar luego
+
+Cómo lo vendés:
+
+“Usamos una landing como primer paso para validar y luego escalar a una aplicación web.”
+
+Este es solo uno de los caminos, no el único.
+______________________________________
+Cómo mostrar esto en tu web (sin confundir)
+Opción A — Un solo servicio “Landing pages”, con sub-usos
+
+💡 La más clara
+
+Landing pages
+
+• Presencia online
+• Captación de clientes
+• Validación de productos
+
+El cliente se auto-identifica.
+
+Opción B — Tres tipos de landing (nivel agencia pro)
+
+Landing institucional
+
+Landing de conversión
+
+Landing para productos digitales
+
+Muy claro, cero fricción.
+*/

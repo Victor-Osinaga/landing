@@ -85,6 +85,10 @@
     grid-template-columns: 1fr;
   }
 
+  .landing-pages-container{
+    grid-template-columns: 1fr;
+  }
+
   /*Footer*/
   .subfooter__container{
     grid-template-columns: 1fr;
@@ -108,81 +112,42 @@ El cliente se reconoce solo.
 Landing pages diseñadas según el objetivo de tu negocio.
 Una landing puede ser tu presencia online, una herramienta para captar clientes o el primer paso de un producto digital.
 
-1️⃣ Landing institucional (presencia online)
+1️_ Landing institucional (presencia online)
 
-Para quién es
+Para quién es: Negocios, marcas personales, estudios, profesionales. Quieren verse serios y confiables
 
-Negocios, marcas personales, estudios, profesionales
+Incluye:
 
-Quieren verse serios y confiables
-
-Incluye
-
-Diseño visual profesional
-
-Contenido claro y ordenado
-
-Información de servicios
-
-Formulario o contacto directo
-
-Mensaje clave
-
-“Tu negocio, bien presentado en internet.”
-
+-Diseño visual profesional
+-Contenido claro y ordenado
+-Información de servicios
+-Formulario o contacto directo
+Mensaje clave:“Tu negocio, bien presentado en internet.”
 🔚 Acá la landing es el producto final. Punto.
 
-2️⃣ Landing de conversión (captación de clientes)
+2️_ Landing de conversión (captación de clientes)
 
-Para quién es
+Para quién es:Servicios, Campañas, Anuncios, Venta directa
 
-Servicios
-
-Campañas
-
-Anuncios
-
-Venta directa
-
-Incluye
-
-Copy orientado a conversión
-
-Formularios optimizados
-
-Integración con WhatsApp / email / CRM
-
-Métricas básicas
-
-Mensaje clave
-
-“Convertimos visitas en contactos reales.”
-
+Incluye:
+-Copy orientado a conversión
+-Formularios optimizados
+-Integración con WhatsApp / email / CRM
+-Métricas básicas
+Mensaje clave:“Convertimos visitas en contactos reales.”
 🔚 Puede quedarse solo en landing, sin app.
 
-3️⃣ Landing para productos digitales / validación
+3️_ Landing para productos digitales / validación
 
-Para quién es
-
-Startups
-
-Emprendedores
-
-Nuevas ideas
+Para quién es: Startups, Emprendedores, Nuevas ideas
 
 Incluye
+-Propuesta de valor clara
+-Captura de usuarios interesados
+-Métricas de validación
+-Base lista para escalar
 
-Propuesta de valor clara
-
-Captura de usuarios interesados
-
-Métricas de validación
-
-Base lista para escalar
-
-Mensaje clave
-
-“Validá tu idea antes de invertir en desarrollo.”
+Mensaje clave: “Validá tu idea antes de invertir en desarrollo.”
 
 ➡️ Opcional: escalar a app web cuando el negocio lo necesita.
 

@@ -510,7 +510,7 @@ section {
 
 .services__cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1.5rem;
 }
 
@@ -518,8 +518,38 @@ section {
   font-size: var(--text-lg);
 }
 
-.services__card p {
-  font-size: var(--text-base);
+.landing-pages-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-columns: 1fr;*/
+}
+
+.landing-pages-left-container{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  /*align-items: center;*/
+  height: 100%;
+  justify-content: center;
+  /*align-content: center;*/
+}
+
+.services-landing-items-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-template-columns: 1fr 1fr 1fr;*/
+  gap: 1.5rem;
+}
+
+.services-landing-items-title{
+  font-size: var(--text-sm);
+}
+
+.services-landing-items{
+  display: flex;
+  flex-direction: column;
+  /*font-size: var(--text-sm);*/
+  font-size: 13px;
 }
 
 /*FOOTER___________________________________*/

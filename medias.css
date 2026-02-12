@@ -99,6 +99,11 @@
     /* gap: 1.5rem; */
   }
 
+  /* service software development */
+.soft-dev-container{
+  grid-template-columns: 1fr;
+}
+
   /*Footer*/
   .subfooter__container {
     grid-template-columns: 1fr;

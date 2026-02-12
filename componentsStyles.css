@@ -15,7 +15,8 @@
   border-radius: 10px;
   font-weight: 600;
   text-decoration: none;
-  /*font-size: var(--text-base)*/
+  font-size: var(--text-base);
+  text-align: center;
 
   /*&:hover{
     cursor: pointer;

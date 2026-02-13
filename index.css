@@ -84,6 +84,7 @@
   /* bg colors */
   --emerald: rgba(16, 185, 129, 1);
   --red: rgba(220, 53, 69, 1);
+  --amber: rgba(245, 158, 11, 1);
 
   /*PULSE COLORS AND ALPHA*/
   .pulse-green-point-available {
@@ -125,6 +126,15 @@
     --pulse-r: 59;
     --pulse-g: 130;
     --pulse-b: 246;
+    --pulse-a: 0.7;
+    --pulse-scale: 1;
+    --animation-duration: 2s;
+  }
+
+  .pulse-amber {
+    --pulse-r: 245;
+    --pulse-g: 158;
+    --pulse-b: 11;
     --pulse-a: 0.7;
     --pulse-scale: 1;
     --animation-duration: 2s;
@@ -185,7 +195,8 @@ a {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: clamp(1rem, 4vw, 2rem);
+  /* padding: clamp(1rem, 4vw, 2rem); */
+  padding: clamp(1rem, 4vw, 2rem) 0;
   /*border: 1px solid green;*/
 }
 
@@ -197,6 +208,11 @@ section {
   /*padding-block: clamp(3rem, 5vw, 4rem);*/
   padding-block: 2rem;
 }
+.section-title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-size: var(--text-3xl);
+}
 .card__default-spacing {
   padding: 1rem 1.5rem;
   display: flex;
@@ -207,6 +223,18 @@ section {
   /*border: 1px solid #e5e5e5;*/
   /*border-radius: 10px;*/
   /*background: #fff;*/
+}
+
+.micro-text-title {
+  font-size: var(--text-sm);
+  text-align: center;
+  letter-spacing: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 /*HEADER ______________________________________*/
@@ -326,7 +354,7 @@ section {
 
 .badge-available {
   grid-column: 1 / -1;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   text-align: center;
 }
 
@@ -503,24 +531,25 @@ section {
 
 /* SERVICES _____________________________ */
 
-#services h2 {
+/* #services h2 {
   text-align: center;
-  margin-bottom: .5rem;
-  font-size: var(--text-2xl);
-}
+  margin-bottom: 0.5rem;
+  font-size: var(--text-3xl);
+} */
 
 .services__cards-container {
   display: grid;
   grid-template-columns: 1fr;
   /*gap: 2rem;*/
+  padding: 1rem 0;
 }
 
-.services__cards-container > li{
+.services__cards-container > li {
   padding: 3rem 0;
   border-bottom: 1px solid #ccc;
 }
 
-.services__cards-container > li:nth-child(1){
+.services__cards-container > li:nth-child(1) {
   padding: 0 0 3rem;
 }
 
@@ -554,7 +583,7 @@ section {
 }
 
 .services-landing-items-title {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
 }
 
 .services-landing-items {
@@ -586,12 +615,17 @@ section {
 .prod-dev-plan {
   display: flex;
   flex-direction: column;
-  align-items: start;
-  text-align: start;
-  gap: .5rem;
+  justify-content: space-between;
   padding: 1rem 1.5rem;
 }
-.prod-dev-plan-title{
+.prod-dev-plan-content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+  gap: 0.5rem;
+}
+.prod-dev-plan-title {
   text-align: center;
   margin: 0 auto;
   font-size: var(--text-base);
@@ -603,27 +637,47 @@ section {
   /*padding: 0 1rem;*/
   margin: 0 auto;
 }
-.prod-dev-first-item{
+.prod-dev-first-item {
   /*color: var(--emerald);*/
   font-weight: 500;
 }
 .prod-dev-obj {
   /*font-weight: 500;*/
-  margin: .5rem;
+  margin: 0.5rem;
 }
-.prod-dev-frase{
+.prod-dev-frase {
   text-align: center;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* service software development */
-.soft-dev-container{
+.soft-dev-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   min-height: 400px;
+  gap: 1.5rem;
   align-items: center;
 }
 
+/* PORQUE ELEGIRNOS? ________________________*/
+.section-description {
+  margin-bottom: 1.5rem;
+}
+
+.saas-card-name {
+  text-align: center;
+  font-weight: 600;
+  font-size: var(--text-base);
+  margin-bottom: 0.5rem;
+}
+
+.saas-cta-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  text-align: center;
+  gap: 0.5rem;
+}
 
 /*FOOTER___________________________________*/
 #footer {

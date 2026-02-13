@@ -78,6 +78,27 @@
   border: 1px solid #e5e5e5;
   animation: pulse-badge-green 1.8s ease-out infinite;
 }
+.badge-amber {
+  display: inline-block;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  padding: 0.25rem 1rem;
+  border-radius: 10px;
+  /*DEFAULT*/
+  background: var(--amber);
+
+  /* otra variante */
+  /*  var: --emerald */
+  /* background: rgba(16, 185, 129, 0.1); */
+  /* color: var(--emerald); */
+
+  color: #fff;
+
+  /*CUSTOM*/
+  /*background: #fff;*/
+  border: 1px solid #e5e5e5;
+  /* animation: pulse-badge-green 1.8s ease-out infinite; */
+}
 
 .badge-red {
   display: inline-block;
@@ -108,6 +129,8 @@
 
 /*7 CONTAINERS ___________________*/
 .glass-container {
+  
+  padding: clamp(1rem, 4vw, 2rem);
   /* Base blanca gris Apple */
   background: linear-gradient(
     180deg,

@@ -128,6 +128,7 @@
 }
 
 /*7 CONTAINERS ___________________*/
+
 .glass-container {
   
   padding: clamp(1rem, 4vw, 2rem);
@@ -247,6 +248,15 @@
   /*color: #1c1c1e;*/
   /*color: #111;*/
 }
+
+.sub-glass-dark-mode {
+    background: linear-gradient(180deg, rgb(61 61 61 / 78%) 0%, rgb(77 77 77 / 76%) 22%, rgb(67 67 67 / 74%) 45%, rgb(67 67 67 / 76%) 68%, rgb(0 0 0 / 92%) 100%);
+    backdrop-filter: blur(60px) saturate(120%);
+    -webkit-backdrop-filter: blur(60px) saturate(120%);
+    border-radius: 20px;
+    border: 0.5px solid rgba(255, 255, 255, 0.45);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 0 10px rgba(0, 0, 0, 0.18);
+  }
 
 .sub-glass-red {
   /*STYLE 1 - BACKGROUND*/

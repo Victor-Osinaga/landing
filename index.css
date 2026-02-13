@@ -3,7 +3,9 @@
 	padding: 0;
 	box-sizing: border-box;
 }*/
-
+::view-transition-group(root) {
+  animation-duration: 1s;
+}
 #particles-bg {
   position: fixed;
   inset: 0;
@@ -154,7 +156,6 @@ html {
 }
 
 body {
-  background-color: #ffffff;
 
   /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krIG-0uhDU5iqbv2Xslwf-ZxQ4BYyy-_Yg&s");*/
   /*background-image: url("https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");*/
@@ -162,6 +163,9 @@ body {
   background-attachment: center;
   background-position: center;
   background-size: cover;
+  --bg: #ffffff;
+  background-color: var(--bg);
+  /*background-color: #ffffff;*/
 
   font-family: "Montserrat", sans-serif;
   font-family: "Geist", sans-serif;
@@ -169,6 +173,9 @@ body {
   font-weight: var(--font-weight-normal);
   color: var(--text-body-light);
 }
+
+
+
 .hero {
   min-height: 100vh;
   width: 100%;

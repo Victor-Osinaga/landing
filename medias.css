@@ -104,6 +104,11 @@
     grid-template-columns: 1fr;
   }
 
+  /* PREGUNTAS FRECUENTES */
+  .faq-container {
+    grid-template-columns: 1fr;
+  }
+
   /*Footer*/
   .subfooter__container {
     grid-template-columns: 1fr;

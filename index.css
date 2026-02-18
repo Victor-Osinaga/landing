@@ -156,7 +156,6 @@ html {
 }
 
 body {
-
   /*background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3krIG-0uhDU5iqbv2Xslwf-ZxQ4BYyy-_Yg&s");*/
   /*background-image: url("https://t4.ftcdn.net/jpg/04/61/47/03/360_F_461470323_6TMQSkCCs9XQoTtyer8VCsFypxwRiDGU.jpg");*/
   background-repeat: no-repeat;
@@ -173,8 +172,6 @@ body {
   font-weight: var(--font-weight-normal);
   color: var(--text-body-light);
 }
-
-
 
 .hero {
   min-height: 100vh;
@@ -213,7 +210,8 @@ a {
 
 section {
   /*padding-block: clamp(3rem, 5vw, 4rem);*/
-  padding-block: 2rem;
+  /* padding-block: 2rem; */
+  padding-top: 2.5rem;
 }
 .section-title {
   text-align: center;
@@ -684,6 +682,235 @@ section {
   margin-top: 1rem;
   text-align: center;
   gap: 0.5rem;
+}
+
+/* CARDS DE DIFERENCIACION */
+.sub-section-container {
+  /* padding-top: 4.5rem; */
+  padding-top: calc(var(--nav-height) + 1rem);
+}
+.dif-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.dif-card {
+  padding: 1rem 1.5rem;
+}
+
+.dif-card-title {
+  font-size: var(--text-lg);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* CARDS projects */
+.projects-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  gap: 1.5rem;
+}
+
+.projects-card-title {
+  font-size: var(--text-xl);
+  /* text-align: center; */
+  margin-bottom: 0.5rem;
+}
+
+.projects-card {
+  position: relative;
+  overflow: hidden;
+}
+.projects-img-container {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 10;
+}
+.projects-img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  color: transparent;
+  object-fit: cover;
+}
+
+/* PROJECT DETAIL */
+.projects-detail-container {
+  padding: 1.5rem;
+}
+.projects-category-container {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  margin-bottom: 1rem;
+}
+
+.projects-detail-container > p {
+  font-size: var(--text-sm);
+}
+
+/* CLIENTS LIST */
+.clients-container-list {
+  /* position: relative; */
+  overflow: hidden;
+  width: 100%;
+}
+.clients-track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scrollClients 45s linear infinite;
+  margin-bottom: 1rem;
+}
+.clients-track-2 {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: scrollClients 45s linear infinite;
+  animation-direction: reverse;
+}
+
+.clients-card {
+  min-width: 180px;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Animación */
+@keyframes scrollClients {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.testimony-card {
+  width: 380px;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 0.5rem;
+}
+
+.testimony-comment {
+  padding: 1rem 0;
+}
+.testimony-client-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-top: 1px solid #ccc;
+}
+.testimony-client-name {
+  font-weight: var(--font-weight-extrabold);
+}
+
+/* PREGUNTAS FRECUENTES */
+.faq-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.faq-help-card {
+  padding: 1rem 1.5rem;
+  background-color: oklab(0.949998 -0.00000941753 0.0000221729 / 0.5);
+  border-radius: 1rem;
+  border: 1px solid lab(89.56 -0.0000298023 0);
+  font-size: var(--text-sm);
+}
+
+.faq-help-card > span {
+  display: flex;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+/* details {
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+summary {
+  font-weight: bold;
+}
+
+details[open] {
+  background-color: #f5f5f5;
+} */
+
+.faq-item {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  background: white;
+}
+
+/* Quitar marcador default */
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 15px 20px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* Quitar flecha default en Chrome */
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Flecha personalizada */
+.faq-item summary::after {
+  content: "＋";
+  position: absolute;
+  right: 20px;
+  /* transition: transform 0.7s ease; */
+}
+
+/* Rotar flecha cuando está abierto */
+/* .faq-item[open] summary::after {
+  transform: rotate(45deg);
+} */
+
+/* Animación usando grid */
+.faq-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  /* transition: grid-template-rows 0.4s ease; */
+}
+
+.faq-item[open] .faq-content {
+  grid-template-rows: 1fr;
+}
+
+.faq-content p {
+  overflow: hidden;
+  padding: 0 20px 15px 20px;
+  margin: 0;
+  color: #555;
 }
 
 /*FOOTER___________________________________*/

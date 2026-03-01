@@ -17,9 +17,9 @@ const changeColor = () => {
     updateColor();
   });
 };
-const changeColorButton = document.querySelector("#change-color");
-changeColorButton.addEventListener("click", changeColor);
-changeColorButton.addEventListener("keypress", changeColor)
+// const changeColorButton = document.querySelector("#change-color");
+// changeColorButton.addEventListener("click", changeColor);
+// changeColorButton.addEventListener("keypress", changeColor);
 
 const canvas = document.getElementById("particles-bg");
 const ctx = canvas.getContext("2d");
@@ -92,6 +92,9 @@ class Particle {
     // negro
     ctx.fillStyle = `rgba(0, 0, 0, ${this.alpha})`;
     ctx.shadowColor = "rgb(0, 0, 0)";
+    // NEON
+    // ctx.fillStyle = `rgba(0, 225, 255, ${this.alpha})`;
+    // ctx.shadowColor = "rgb(0, 225, 255)";
 
     ctx.shadowBlur = this.glow;
     ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);

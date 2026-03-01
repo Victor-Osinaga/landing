@@ -46,7 +46,7 @@
   </head>
   <body>
     <!-- Background -->
-    <!-- <canvas id="particles-bg"></canvas> -->
+    <canvas id="particles-bg"></canvas>
     <!-- <div class="hero"> -->
     <header id="header" class="glass-container-header2">
       <nav class="nav">
@@ -70,7 +70,7 @@
           </svg>
           Digital Sonnet
         </span>
-        <button id="change-color">Change color</button>
+        <!-- <button id="change-color">Change color</button> -->
         <div class="header__links-container">
           <ul class="header__links">
             <li>
@@ -524,7 +524,7 @@
                 </div>
               </div>
             </li>
-            <li class="prod-dev-container">
+            <li id="product-development" class="prod-dev-container">
               <div class="prod-dev-intro">
                 <!-- <h4 class="services__cards-title">
                 Productos SaaS personalizados
@@ -656,7 +656,7 @@
               </div>
             </li>
             <!-- <li class="card__default-spacing services__card"> -->
-            <li class="soft-dev-container">
+            <li id="software-development" class="soft-dev-container">
               <div class="prod-dev-intro">
                 <h4 class="services__cards-title">
                   Desarrollo de software a medida
@@ -693,7 +693,7 @@
                 <div class="btn-primary">Quiero mi desarrollo a medida</div>
               </div>
             </li>
-            <li class="soft-dev-container">
+            <li id="posicionamiento-optimizacion" class="soft-dev-container">
               <div class="prod-dev-intro">
                 <h4 class="services__cards-title">
                   Posicionamiento y Optimización
@@ -725,7 +725,7 @@
                 <div class="btn-primary">Quiero mi mejorar mi web</div>
               </div>
             </li>
-            <li class="soft-dev-container">
+            <li id="mantenimiento-soporte" class="soft-dev-container">
               <div class="prod-dev-intro">
                 <h4 class="services__cards-title">
                   Mantenimiento y Soporte Continuo
@@ -865,7 +865,7 @@
 
           <!-- tarjetas de diferenciacion -->
 
-          <div class="sub-section-container">
+          <div id="tarjetas-diferenciacion" class="sub-section-container">
             <span class="micro-text-title text-secondary">SOMOS DISTINTOS</span>
             <h2 class="section-title">Tarjetas de diferenciacion</h2>
             <div class="dif-cards-container">
@@ -1161,7 +1161,7 @@
           </div>
 
           <!-- TESTIMONIOS -->
-          <div class="sub-section-container">
+          <div id="testimony" class="sub-section-container">
             <span class="micro-text-title text-secondary"
               >Lo que dicen nuestros clientes</span
             >
@@ -1309,13 +1309,13 @@
               Hablemos de tu proyecto
             </a>
           </div>
-          <!-- <div class="tagCloud">
-		      		<span class="Sphere"></span>
-		    	</div> -->
+          <div class="tagCloud">
+            <span class="Sphere"></span>
+          </div>
         </div>
         <div class="footer__container">
           <div class="footer__empresa-container">
-            <h4 class="footer__empresa-title">[LOGO] Digital Sonnet</h4>
+            <h4 class="footer__empresa-title">DIGITAL SONNET</h4>
             <div class="footer__empresa-description">
               <p>
                 Creamos soluciones digitales seguras y escalables para empresas,
@@ -1339,18 +1339,36 @@
           </div>
           <div class="footer__links">
             <ul>
-              <li><h4>Servicios</h4></li>
-              <li>Desarrollo web</li>
-              <li>Plataformas SAAS</li>
-              <li>Soporte y mantenimiento</li>
-              <li>Apps móviles</li>
+              <li>
+                <h4><a href="#services">Servicios</a></h4>
+              </li>
+              <li><a href="#services">Desarrollo web</a></li>
+              <li><a href="#services">Landings</a></li>
+              <li><a href="#product-development">Desarrollo de Producto</a></li>
+              <li>
+                <a href="#software-development"
+                  >Desarrollo de software a medida</a
+                >
+              </li>
+              <li>
+                <a href="#posicionamiento-optimizacion"
+                  >Posicionamiento y Optimización SEO</a
+                >
+              </li>
+              <li>
+                <a href="#mantenimiento-soporte">Mantenimiento y Soporte</a>
+              </li>
             </ul>
             <ul>
               <li><h4>Navegación</h4></li>
-              <li>Servicios</li>
-              <li>Clientes</li>
-              <li>Sobre nosotros</li>
-              <li>Contacto</li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#por-que-nosotros">¿Porque elegirnos?</a></li>
+              <li><a href="#tarjetas-diferenciacion">Nuestas virtudes</a></li>
+              <li><a href="#projects">Proyectos desarrollados</a></li>
+              <li><a href="#clients">Clientes</a></li>
+              <li><a href="#testimony">Testimonios</a></li>
+              <li><a href="#faq">Preguntas frecuentes</a></li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
             <ul>
               <li><h4>Contacto</h4></li>
@@ -1362,9 +1380,9 @@
             <ul>
               <li><h4>Empresa</h4></li>
               <li>Sobre nosotros</li>
-              <li>Proyectos - Casos de éxito</li>
+              <li><a href="#projects">Proyectos - Casos de éxito</a></li>
               <li>Tecnologías</li>
-              <li>Contacto</li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
         </div>

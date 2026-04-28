@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
+      name="google-site-verification"
+      content="40DKOb8ktfMCCZd4W6-ZQJy9u5mYY9xmBcs3XER2Fs8"
+    />
+    <meta
       name="description"
       content="Desarrollamos software a medida para empresas, startups, pymes y emprendedores que buscan automatizar procesos, escalar y optimizar su operación con tecnología."
     />
@@ -46,12 +50,13 @@
   </head>
   <body>
     <!-- Background -->
-    <!-- <canvas id="particles-bg"></canvas> -->
+    <canvas id="particles-bg"></canvas>
     <!-- <div class="hero"> -->
     <header id="header" class="glass-container-header2">
       <nav class="nav">
         <span class="header__title">
-          <svg
+          <img src="/assets/1.png" alt="logo digital sonnet" width="60" />
+          <!-- <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
@@ -67,19 +72,26 @@
             <path d="m18 16 4-4-4-4"></path>
             <path d="m6 8-4 4 4 4"></path>
             <path d="m14.5 4-5 16"></path>
-          </svg>
+          </svg> -->
           Digital Sonnet
         </span>
+        <!-- <button id="change-color">Change color</button> -->
         <div class="header__links-container">
           <ul class="header__links">
             <li>
-              <a href="../index.html">Inicio</a>
+              <a href="../index.html#hero">Inicio</a>
             </li>
             <li>
-              <a href="#">Nosotros</a>
+              <a href="../index.html#services">Servicios</a>
+            </li>
+            <li>
+              <a href="../index.html#projects">Proyectos</a>
             </li>
             <li>
               <a href="../index.html#clients">Clientes</a>
+            </li>
+            <li>
+              <a href="#">Nosotros</a>
             </li>
             <li>
               <a href="../index.html#contact">Contacto</a>
@@ -126,10 +138,11 @@
             <!-- 👇 AGRUPADOR SEMÁNTICO -->
             <h2 class="visually-hidden">Productos SaaS en producción</h2>
             <article class="card__default-spacing saas-card sub-glass">
-              <h3 class="saas-card-title">Plataforma Educativa</h3>
+              <h3 class="saas-card-title">Gestión de Clubes</h3>
               <p class="text-secondary saas-card-description">
-                SaaS para academias con seguimiento de alumnos y contenido
-                digital.
+                <!-- SaaS para academias con seguimiento de alumnos y contenido
+                digital. -->
+                Sistema para socios, pagos, fichas y control administrativo.
               </p>
               <span class="badge-green pulse pulse-green">En producción ✓</span>
             </article>
@@ -166,8 +179,7 @@
           </div>
         </div>
       </section>
-    </main>
-
+<!-- FOOTER -->
     <footer id="footer">
       <div class="container">
         <div class="subfooter__container glass-container">
@@ -178,13 +190,13 @@
               Hablemos de tu proyecto
             </a>
           </div>
-          <!-- <div class="tagCloud">
-		      		<span class="Sphere"></span>
-		    	</div> -->
+          <div class="tagCloud">
+            <span class="Sphere"></span>
+          </div>
         </div>
         <div class="footer__container">
           <div class="footer__empresa-container">
-            <h4 class="footer__empresa-title">[LOGO] Digital Sonnet</h4>
+            <h4 class="footer__empresa-title">DIGITAL SONNET</h4>
             <div class="footer__empresa-description">
               <p>
                 Creamos soluciones digitales seguras y escalables para empresas,
@@ -208,18 +220,36 @@
           </div>
           <div class="footer__links">
             <ul>
-              <li><h4>Servicios</h4></li>
-              <li>Desarrollo web</li>
-              <li>Plataformas SAAS</li>
-              <li>Soporte y mantenimiento</li>
-              <li>Apps móviles</li>
+              <li>
+                <h4><a href="#services">Servicios</a></h4>
+              </li>
+              <li><a href="#services">Desarrollo web</a></li>
+              <li><a href="#services">Landings</a></li>
+              <li><a href="#product-development">Desarrollo de Producto</a></li>
+              <li>
+                <a href="#software-development"
+                  >Desarrollo de software a medida</a
+                >
+              </li>
+              <li>
+                <a href="#posicionamiento-optimizacion"
+                  >Posicionamiento y Optimización SEO</a
+                >
+              </li>
+              <li>
+                <a href="#mantenimiento-soporte">Mantenimiento y Soporte</a>
+              </li>
             </ul>
             <ul>
               <li><h4>Navegación</h4></li>
-              <li>Servicios</li>
-              <li>Clientes</li>
-              <li>Sobre nosotros</li>
-              <li>Contacto</li>
+              <li><a href="#services">Servicios</a></li>
+              <li><a href="#por-que-nosotros">¿Porque elegirnos?</a></li>
+              <li><a href="#tarjetas-diferenciacion">Nuestas virtudes</a></li>
+              <li><a href="#projects">Proyectos desarrollados</a></li>
+              <li><a href="#clients">Clientes</a></li>
+              <li><a href="#testimony">Testimonios</a></li>
+              <li><a href="#faq">Preguntas frecuentes</a></li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
             <ul>
               <li><h4>Contacto</h4></li>
@@ -231,9 +261,9 @@
             <ul>
               <li><h4>Empresa</h4></li>
               <li>Sobre nosotros</li>
-              <li>Proyectos - Casos de éxito</li>
+              <li><a href="#projects">Proyectos - Casos de éxito</a></li>
               <li>Tecnologías</li>
-              <li>Contacto</li>
+              <li><a href="#contact">Contacto</a></li>
             </ul>
           </div>
         </div>
@@ -244,13 +274,9 @@
     </footer>
     <!-- </div> -->
     <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
-    <script type="text/javascript" src="../sphere-config.js"></script>
+    <script type="text/javascript" src="./sphere-config.js"></script>
 
     <script src="../particles.js"></script>
     <script src="../scroll-reveal.js"></script>
   </body>
 </html>
-
-<!-- 
-- CENTRAR EL CONTENIDO DE LAS PRIMERDAS DOS TARJETAS DE SAAS EN EL HERO
--->

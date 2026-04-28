@@ -1,20 +1,21 @@
-ScrollReveal().reveal(".glass-container", { delay: 250 });
-ScrollReveal().reveal("#header", { delay: 350, 
-	distance: '150%',
-    origin: 'top',
-    opacity: null, 
-    duration: 750,
-    reset: true });
-ScrollReveal().reveal("#hero", { delay: 750,
-	// distance: '150%',
-    origin: 'bottom',
-    opacity: null, 
-    duration: 750,
-    reset: true });
-ScrollReveal().reveal(".saas-card", { delay: 550 });
-ScrollReveal().reveal(".stats-grid", { delay: 550 });
-ScrollReveal().reveal(".services__card", { delay: 550 });
+// ScrollReveal().reveal(".glass-container", { delay: 250 });
+// ScrollReveal().reveal("#header", { delay: 350,
+// 	distance: '150%',
+//     origin: 'top',
+//     opacity: null,
+//     duration: 750,
+//     reset: true });
+// ScrollReveal().reveal("#hero", { delay: 750,
+// 	// distance: '150%',
+//     origin: 'bottom',
+//     opacity: null,
+//     duration: 750,
+//     reset: true });
+// ScrollReveal().reveal(".saas-card", { delay: 550 });
+// ScrollReveal().reveal(".stats-grid", { delay: 550 });
+// ScrollReveal().reveal(".services__card", { delay: 550 });
 
+// LO DE ABAJO NO SIRVE _____________________________________________
 // ScrollReveal().reveal(".home__title--secondary", { delay: 550 });
 
 // ScrollReveal().reveal(".section__subtitle", { delay: 350 });

@@ -3,8 +3,12 @@
 	padding: 0;
 	box-sizing: border-box;
 }*/
-::view-transition-group(root) {
-  animation-duration: 1s;
+@view-transition {
+  navigation: auto;
+}
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 500ms;
 }
 #particles-bg {
   position: fixed;
